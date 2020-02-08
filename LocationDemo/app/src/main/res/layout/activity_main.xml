@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androids="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    androids:layout_width="match_parent"
+    androids:layout_height="match_parent"
+    androids:background="#008080"
+    androids:id="@+id/mainlayout"
+    androids:orientation="vertical"
+    tools:ignore="NamespaceTypo">
+
+    <TableLayout androids:layout_width="match_parent"
+        androids:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                androids:id="@+id/timevalue"
+                androids:layout_width="match_parent"
+                androids:layout_height="match_parent"
+                androids:gravity="center"
+                androids:layout_gravity="center"
+                androids:layout_weight="33"
+                />
+            <TextView
+                androids:id="@+id/bearingvalue"
+                androids:layout_width="match_parent"
+                androids:layout_height="match_parent"
+                androids:gravity="center"
+                androids:layout_gravity="center"
+                androids:layout_weight="33"
+                />
+            <TextView
+                androids:id="@+id/Status"
+                androids:layout_width="match_parent"
+                androids:layout_height="match_parent"
+                androids:gravity="center"
+                androids:layout_gravity="center"
+                androids:layout_weight="34"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView androids:id="@+id/latitudevalue"
+                androids:layout_width="match_parent"
+                androids:layout_height="match_parent"
+                androids:gravity="center"
+                androids:layout_gravity="center"
+                androids:layout_weight="33"
+                />
+            <TextView androids:id="@+id/longtitudevalue"
+                androids:layout_width="match_parent"
+                androids:layout_height="match_parent"
+                androids:gravity="center"
+                androids:layout_gravity="center"
+                androids:layout_weight="33"
+                />
+            <TextView androids:id="@+id/altitudevalue"
+                androids:layout_width="match_parent"
+                androids:layout_height="match_parent"
+                androids:gravity="center"
+                androids:layout_gravity="center"
+                androids:layout_weight="34"
+                />
+        </TableRow>
+
+
+    <TableRow>
+        <TextView androids:id="@+id/Arclatitudevalue"
+            androids:layout_width="match_parent"
+            androids:layout_height="match_parent"
+            androids:gravity="center"
+            androids:layout_gravity="center"
+            androids:layout_weight="33"
+            />
+        <TextView androids:id="@+id/Arclongtitudevalue"
+            androids:layout_width="match_parent"
+            androids:layout_height="match_parent"
+            androids:gravity="center"
+            androids:layout_gravity="center"
+            androids:layout_weight="33"
+            />
+        <TextView androids:id="@+id/Arcaltitudevalue"
+            androids:layout_width="match_parent"
+            androids:layout_height="match_parent"
+            androids:gravity="center"
+            androids:layout_gravity="center"
+            androids:layout_weight="34"
+            />
+    </TableRow>
+</TableLayout>
+
+    <TableLayout androids:layout_width="match_parent"
+        androids:layout_height="wrap_content">
+        <TableRow>
+            <Button androids:id="@+id/close"
+                androids:layout_width="wrap_content"
+                androids:layout_height="wrap_content"
+                androids:text="关闭"
+                androids:layout_weight="5"
+                androids:textSize="20sp"></Button>
+
+            <Button androids:id="@+id/open"
+                androids:layout_width="wrap_content"
+                androids:layout_height="wrap_content"
+                androids:text="打开"
+                androids:layout_weight="5"
+                androids:textSize="20sp"></Button>
+        </TableRow>
+    </TableLayout>
+
+    <com.esri.arcgisruntime.mapping.view.MapView
+        androids:id="@+id/mapView"
+        androids:layout_width="match_parent"
+        androids:layout_height="wrap_content" >
+    </com.esri.arcgisruntime.mapping.view.MapView>
+
+</LinearLayout>
